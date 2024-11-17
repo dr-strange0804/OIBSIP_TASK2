@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Fixed Profile Picture Section -->
+    <aside class="fixed-profile">
+        <img src="main.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Your Name</h1>
+    </aside>
+
+    <!-- Main Content Sections -->
+    <div class="content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                <span class="text">I'm Aasritha,</span>
+                <br> "A Passionate Web developer skilled in HTML, CSS and  JavaScript focused on creating responsive, user-friendly applications. Experienced in building interactive designs and solutions that enhance user experiences."
+            </p>
+        </section>
+        
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Git & GitHub</li>
+               
+            </ul>
+        </section>
+        <br>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Travel Agency Landing Page</h3>
+                <img src="landpage.png" alt="Project Screenshot">
+                <p class="project-description">Developed a sleek and responsive landing page for a travel agency, featuring interactive destination showcases and smooth animations. Utilized HTML, CSS, and JavaScript to create a seamless user experience, ensuring mobile optimization and cross-browser compatibility.</p>
+                <br>
+                <br>
+            </div>
+            <div class="project">
+                <h3>Temperature Converter Website</h3>
+                <img src="tempconv.png" alt="Project Screenshot">
+                <p class="project-description">Designed and implemented a web-based temperature converter that allows users to easily convert between Celsius, Fahrenheit, and Kelvin. Built with HTML, CSS, and JavaScript, the app provides real-time conversion with a clean, intuitive interface.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div id="response"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

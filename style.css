@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* Neon Colors */
+:root {
+    --neon-pink: #ff007f;
+    --neon-purple: #a900ff;
+}
+
+/* Navigation Bar */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 15px ;
+    box-shadow: 0px 0px 15px 5px var(--neon-purple);
+    text-align: center;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style-type: none;
+}
+
+.top-nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.top-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.top-nav ul li a:hover {
+    color: var(--neon-pink);
+}
+
+/* Fixed Profile Picture */
+.fixed-profile {
+    position: fixed;
+    left: 20px;
+    top: 80px;
+    width: 220px;
+    text-align: center;
+}
+
+.profile-pic-rectangle {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 4px solid var(--neon-pink);
+    box-shadow: 0 0 20px var(--neon-pink), 0 0 40px var(--neon-purple);
+}
+
+.fixed-profile h1 {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+/* Main Content */
+.content {
+    margin-left: auto;
+    margin-right: 20px; 
+    padding-top: 70px;
+    width: calc(100% - 300px);
+    text-align: right;
+    position: relative;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: #222;
+    border-radius: 8px;
+    max-width: 700px;
+    margin-left: auto; 
+    box-shadow: 0 0 20px var(--neon-purple);
+    text-align: left; 
+}
+
+h2 {
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+
+/* Project Section Image */
+.project img {
+    width: 100%;
+    max-width: 100%;   
+    max-height: 400px; 
+    height: auto;      
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 10px var(--neon-purple);
+    object-fit: cover; 
+}
+
+
+/* Contact Form */
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+form input, form textarea {
+    padding: 8px;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+form button {
+    padding: 10px;
+    background-color: var(--neon-purple);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: var(--neon-pink);
+}
+
+/* Response Message */
+#response {
+    margin-top: 15px;
+    color: #4caf50;
+    font-weight: bold;
+}
+/* Technical Skills Section */
+
+#skills {
+    padding: 20px;
+    margin: 20px 0;
+    background: #222;
+    border-radius: 8px;
+    max-width: 680px;  
+    width: 100%;       
+    margin-left: auto; 
+    margin-right: 20px; 
+    box-shadow: 0 0 20px var(--neon-purple);
+    text-align: left;   
+}
+
+#skills h2 {
+    color: var(--neon-purple);
+    font-size: 2.0em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    list-style-type: none;
+}
+
+#skills ul li {
+    padding: 8px;
+    background: #333;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: #fff;
+    font-size: 1.1em;
+    box-shadow: 0 0 10px var(--neon-purple);
+}
+
+#skills ul li:hover {
+    background: var(--neon-purple);
+    color: #111;
+    cursor: pointer;
+}
+
+
+/* Main Heading Neon Style */
+section h2 {
+    color: var(--neon-purple);  
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+/* Project Section Headings */
+.project h3 {
+    font-size: 1.8em;    
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: none;
+}
+
+/* Simple Name Style */
+.simple-name {
+    font-size: 2.0em;
+    color: var(--neon-purple); 
+    font-weight: bold;
+}
+/* About section description */
+#about p {
+    font-size: 1.4em; 
+    color: #fff;  
+    line-height: 1.6;
+    text-align: left;  
+}
+
+
+
+/* Technical skills description */
+#technical-skills ul {
+    font-size: 1.75em; 
+    color: #fff; 
+    line-height: 1.8;
+    text-align: left;  
+}
+
+/* Contact section description */
+#contact p {
+    font-size: 3.0em; 
+    color: #fff; 
+    line-height: 2.0;
+    text-align: right;  
+}
+/* Styling for name */
+.text {
+    font-size: 1.3em;  
+    color: var(--neon-purple);
+    font-weight: bold; 
+}
+
+.project-description {
+    font-size: 1.4em; 
+    line-height: 1.6; 
+    color: #ffffff; 
+    margin-bottom: 15px; 
+}
+section {
+    margin-bottom: 50px; 
+}
+section {
+    scroll-margin-top: 100px; 
+}
+.navbar a {
+    padding: 10px 15px; 
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+
